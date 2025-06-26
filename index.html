@@ -20,7 +20,7 @@
 <body>
    <header>
     <nav class="mt-5">
-     <div class="navbar bg-base-100">
+     <div class="navbar bg-base-100 px-10">
   <div class="flex-1">
     <a class="btn btn-ghost text-black font-bold text-4xl">ReTro</a>
   </div>
@@ -58,13 +58,249 @@
       
     </nav>
 
+<!-- banner section starts here -->
+ <section class="px-12">
+  <div
+  class="hero rounded-4xl   h-[450px] bg-[#12132D] "
+  style="background-image: url(/Retro-forum/images/bgbanner.png);
+   background-position: bottom; background-repeat: no-repeat;"
+>
+  
+  <div class="hero-content text-neutral-content gap-80">
+    <div class="max-w-md ">
+      <h1 class="mb-5 text-5xl font-bold">Welcome to the ReTro Forum</h1>
+      <p class="mb-5">
+       Share your favorite opinion and win and wp forum coffee mug!
+      </p>
+      <!-- search field here -->
+      <div class="bg-white py-1 rounded-3xl">
+    <input type="search" id="search-field" class="border-none mr-32 py-2   ml-5 items-start text-black" placeholder="Search here anything">
+      <button onclick="searchhandler()" class="btn text-base px-7 rounded-3xl bg-[#797DFC] text-white font-semibold shadow-none">Search</button>
+      </div>
+      <!-- search field ends here -->
+    </div>
+    <!-- registered users section -->
+     <div class="bg-white space-y-3 rounded-2xl p-10">
+      <div class="flex  justify-between text-[#12132DCC] text-2xl font-normal gap-10">
+        <p>Registered users</p>
+        <p>01</p>
+      </div>
+
+      <div class="flex justify-between  text-[#12132DCC] text-2xl font-normal">
+        <p>Forum</p>
+        <p>05</p>
+      </div>
+
+      <div class="flex justify-between  text-[#12132DCC] text-2xl font-normal">
+        <p>Topics</p>
+        <p>01</p>
+      </div>
+
+      <div class="flex justify-between  text-[#12132DCC] text-2xl font-normal">
+        <p>Replies</p>
+        <p>01</p>
+      </div>
+       
+     </div>
+     <!-- registered users section ends here -->
+  </div>
+</div>
+ </section>
+
    </header>
 
    <main>
+<!-- discuss section  -->
+    <section class="mt-10">
+      <h1 class="text-4xl font-bold text-center">Let's Discuss</h1>
+      <p class="text-center text-[#12132D99] mt-4">Yes, you can run unit tests and view the results directly within the app. <br> 
+        The integrated testing features allow for a streamlined .</p>
+       <!-- loading spinner here -->
+        <div id="loading-container" class="flex hidden justify-center mt-5">
+          <span class="loading loading-spinner text-center  text-[#12132D]"></span>
+        </div>
+        <!-- the container section for informations starts here -->
+         <div class="flex justify-between mx-14 mt-10 gap-5">
+          
+          <!-- container of left side -->
+           
+           <div id="discuss-section" class="">
+            
+            
+            <!-- first card -->
+             <!-- <div class="bg-[#12132D0D] p-10 rounded-2xl">
+     
+             </div> -->
+           </div>
+<!-- another side -->
 
+    <!-- <div class="flex justify-between gap-32 px-5 py-4 rounded-xl  bg-[#12132D0D]">
+            <div><h5 class="font-bold text-lg ">Title</h5></div>
+            <div class="flex gap-2">
+              <div><img src="/Retro-forum/images/tik-mark.png" alt=""></div>
+              <div><p>Mark as read <span> () </span></p></div>
+            </div>
+            </div> -->
+            <div id="view-count-section" class="bg-[#12132D0D] space-y-4 rounded-2xl px-5">
+              <div class="flex justify-between gap-32  py-4 ">
+                <div><h6 class="font-bold text-lg ">Title</h6></div>
+                <div class="flex gap-2">
+                  <div><img src="/Retro-forum/images/tik-mark.png" alt=""></div>
+                  <div><p>Mark as read  (  <span id="mark-read">0</span> )</p></div>
+                </div>
+              </div>
+              <!-- viewcount section starts here -->
+              <!-- <div class="flex rounded-xl justify-between px-5 bg-white py-3 items-center">
+                <div><p class="text-[#12132D]">10 Kids Unaware of Their <br> Halloween Costume</p></div>
+                <div><span class="flex gap-2"><img src="/Retro-forum/images/eye.png" alt=""> <p>1568</p></span></div>
+              </div> -->
+            </div>
+           
+
+
+         </div>
+        
+
+    </section>
+
+    <!-- forum section -->
+    <section class="bg-[#12132D] mt-10 mx-10 rounded-2xl px-20 py-10">
+      <div class="flex justify-between items-center">
+        <!-- text div -->
+       <div class="space-y-7">
+<h1 class="text-4xl font-bold text-white">Join Our Forum</h1>
+<p class="text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug!
+   Yes, you can <br> run unit tests and view the results directly within the app. </p>
+   <button class="btn bg-[#797DFC] border-none text-white text-lg font-semibold rounded-3xl p-6 shadow-none">Registered Now</button>
+       </div>
+       <!-- img div -->
+        <div>
+          <img src="/Retro-forum/images/joinforum.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- lates post section starts from here -->
+     <section class="mt-20">
+      <h1 class="text-4xl font-bold text-black text-center mb-5">Latest Post</h1>
+      <p class="text-black text-center">Yes, you can run unit tests and view the results directly within the app.
+         The <br> integrated testing features allow for a streamlined .</p>
+
+         <!-- post card div container starts from here -->
+          <div class="flex justify-center mt-10 gap-5" id="latest-container">
+            <!-- first card -->
+            <!-- <div class="card bg-base-100 w-96 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes"
+      class="rounded-xl" />
+  </figure>
+  <div class="card-body ">
+    <span class="flex items-center gap-3"><span><img src="/Retro-forum/images/date.png" alt=""></span>
+     <span><p class="text-[#12132D99]">29 january 2025</p></span></span>
+     <h6 class="text-lg font-bold">What will a mars habitat force that impact in our daily life!!!</h6>
+    <p class="text-[#12132D99] text-base">Yes, you can run unit tests and view the results directly within the app. </p>
+    <div class="card-actions">
+      <div><img src="" alt=""></div>
+      <div><p class="text-base font-semibold">Cameron Williumson</p>
+      <p class="text-[#12132D99] text-sm">Unknown</p></div>
+    </div>
+  </div>
+</div> -->
+<!-- second card -->
+  <!-- <div class="card bg-base-100 w-96 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes"
+      class="rounded-xl" />
+  </figure>
+  <div class="card-body ">
+    <span class="flex items-center gap-3"><span><img src="/Retro-forum/images/date.png" alt=""></span>
+     <span><p class="text-[#12132D99]">29 january 2025</p></span></span>
+     <h6 class="text-lg font-bold">What will a mars habitat force that impact in our daily life!!!</h6>
+    <p class="text-[#12132D99] text-base">Yes, you can run unit tests and view the results directly within the app. </p>
+    <div class="card-actions">
+      <div><img src="" alt=""></div>
+      <div><p class="text-base font-semibold">Cameron Williumson</p>
+      <p class="text-[#12132D99] text-sm">Unknown</p></div>
+    </div>
+  </div>
+</div> -->
+
+<!-- third card -->
+  <!-- <div class="card bg-base-100 w-96 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes"
+      class="rounded-xl" />
+  </figure>
+  <div class="card-body ">
+    <span class="flex items-center gap-3"><span><img src="/Retro-forum/images/date.png" alt=""></span>
+     <span><p class="text-[#12132D99]">29 january 2025</p></span></span>
+     <h6 class="text-lg font-bold">What will a mars habitat force that impact in our daily life!!!</h6>
+    <p class="text-[#12132D99] text-base">Yes, you can run unit tests and view the results directly within the app. </p>
+    <div class="card-actions">
+      <div><img src="" alt=""></div>
+      <div><p class="text-base font-semibold">Cameron Williumson</p>
+      <p class="text-[#12132D99] text-sm">Unknown</p></div>
+    </div>
+  </div>
+</div> -->
+<!-- third card ends here -->
+
+          </div>
+     </section>
    </main>
 
-   <footer>
+   <footer class="mt-20">
+    <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+  <nav class="grid grid-flow-col gap-4">
+      <a class="btn btn-ghost text-black font-bold text-4xl">ReTro</a>
+  </nav>
+  <p class="text-base text-[#12132DB3]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a <br>
+     piece of classical Latin literature from 45 BC</p>
+  <nav>
+    <div class="grid grid-flow-col gap-4 ">
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+        </svg>
+      </a>
+      <a>
+        <img src="/Retro-forum/images/insta.png" alt="">
+      </a>
+      <a>
+        <img src="/Retro-forum/images/4.png" alt="">
+      </a>
+    </div>
+   
+  </nav>
+
+  <aside>
+    <p>2017, All Rights Reserved</p>
+  </aside>
+</footer>
 
    </footer>
     
